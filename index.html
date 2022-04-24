@@ -7,9 +7,8 @@
     <title>start html</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400&family=Raleway:wght@700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400&family=Raleway:wght@700&display=swap">
+    <link rel="stylesheet" href="css/fancybox.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -177,41 +176,68 @@
             <div class="portfolio__top">
                 <h2 class="title">Portfolio</h2>
                 <div class="portfolio__filter-btn">
-                    <button class="portfolio__btn">All</button>
-                    <button class="portfolio__btn">BRANDING</button>
-                    <button class="portfolio__btn">DESIGN</button>
-                    <button class="portfolio__btn">PHOTOGRAPHY</button>
-                    <button class="portfolio__btn">ILLUSTRATION</button>
+                    <button class="portfolio__btn" data-filter="all">All</button>
+                    <button class="portfolio__btn" data-filter=".category-a">BRANDING</button>
+                    <button class="portfolio__btn" data-filter=".category-b">DESIGN</button>
+                    <button class="portfolio__btn" data-filter=".category-c">PHOTOGRAPHY</button>
+                    <button class="portfolio__btn" data-filter=".category-d">ILLUSTRATION</button>
                 </div>
             </div>
         </div>
         <div class="portfolio__content">
-            <div class="portfolio__item">
+            <div class="portfolio__item mix category-a">
                 <img src="images/portfolio/1.jpg" alt="фото портфолио">
+                <a class="portfolio__item-link" href="#">
+                    SHOW PROJECT
+                </a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item mix category-a">
                 <img src="images/portfolio/2.jpg" alt="фото портфолио">
+                <a class="portfolio__item-link" href="#">
+                    SHOW PROJECT
+                </a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item mix category-b">
                 <img src="images/portfolio/3.jpg" alt="фото портфолио">
+                <a class="portfolio__item-link" href="#">
+                    SHOW PROJECT
+                </a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item mix category-b">
                 <img src="images/portfolio/4.jpg" alt="фото портфолио">
+                <a class="portfolio__item-link" href="#">
+                    SHOW PROJECT
+                </a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item mix category-b">
                 <img src="images/portfolio/5.jpg" alt="фото портфолио">
+                <a class="portfolio__item-link" href="#">
+                    SHOW PROJECT
+                </a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item mix category-c">
                 <img src="images/portfolio/6.jpg" alt="фото портфолио">
+                <a class="portfolio__item-link" href="#">
+                    SHOW PROJECT
+                </a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item mix category-c">
                 <img src="images/portfolio/7.jpg" alt="фото портфолио">
+                <a class="portfolio__item-link" href="#">
+                    SHOW PROJECT
+                </a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item mix category-c">
                 <img src="images/portfolio/8.jpg" alt="фото портфолио">
+                <a class="portfolio__item-link" href="#">
+                    SHOW PROJECT
+                </a>
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item mix category-d">
                 <img src="images/portfolio/9.jpg" alt="фото портфолио">
+                <a class="portfolio__item-link" href="#">
+                    SHOW PROJECT
+                </a>
             </div>
         </div>
         <a class="portfolio__add" href="">
@@ -219,33 +245,44 @@
         </a>
         <blockquote class="blockquote">
             «Неважно какую историю вы рассказываете, главное – сделайте своего покупателя героем»
-            <span class="blockquote-author"></span>
+            <span class="blockquote__author">Крис Броган</span>
         </blockquote>
         <div class="portfolio__video">
-            <a class="portfolio__video-link" href="#"></a>
+            <a class="portfolio__video-link" data-fancybox="video-gallery" href="https://youtu.be/bNJW113tbKk">
+                <img src="images/play.svg" alt="иконка плей">
+            </a>
         </div>
-        <div class="portfolio__numbers">
-            <h5 class="portfolio__numders-item">
-                305
-            </h5>
-            <span>Web Designs</span>
-            <h5 class="portfolio__numders-item">
-                220
-            </h5>
-            <span>Logo Designs</span>
-            <h5 class="portfolio__numders-item">
-                52
-            </h5>
-            <span>Print Designs</span>
-            <h5 class="portfolio__numders-item">
-                88
-            </h5>
-            <span>Mobile Apps</span>
+        <div class="container">
+            <div class="portfolio__numbers">
+                <h5 class="portfolio__numbers-item">
+                    305
+                    <span>Web Designs</span>
+                </h5>
+                
+                <h5 class="portfolio__numbers-item">
+                    220
+                    <span>Logo Designs</span>
+                </h5>
+                
+                <h5 class="portfolio__numbers-item">
+                    52
+                    <span>Print Designs</span>
+                </h5>
+                
+                <h5 class="portfolio__numbers-item">
+                    88
+                    <span>Mobile Apps</span>
+                </h5>
+                
+            </div>
         </div>
     </section>
 
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 
