@@ -108,6 +108,16 @@ body {
 
 /* Header */
 
+.header__top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #fff;
+    z-index: 999;
+}
+
 .header__top-inner {
     padding-bottom: 29px;
     display: flex;
@@ -144,6 +154,8 @@ body {
 }
 
 .header__content {
+    padding-top: 100px;
+
     font-family: 'Montserrat', sans-serif;
 
     background-image: url(../images/header-bg.jpg);
@@ -867,6 +879,10 @@ ul.footer__social-list {
 /* max-width: 1200px */
 
 @media (max-width: 1200px) {
+    .header__top-inner {
+        padding-bottom: 5px;
+    }
+
     .about,
     .expertise,
     .portfolio,
@@ -909,6 +925,7 @@ ul.footer__social-list {
         column-gap: 20px;
     }
 }
+/* /max-width: 1200px */
 
 /* max-width: 992px */
 
